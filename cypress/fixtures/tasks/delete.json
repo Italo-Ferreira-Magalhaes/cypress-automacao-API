@@ -1,0 +1,28 @@
+{
+    "remove": {
+        "user": {
+            "name": "Rony Rustico",
+            "email": "ronyrustico@sep.com.br",
+            "password": "123456"
+        },
+        "task": {
+            "name": "Fazer gol na Final de Bike",
+            "tags": [
+                "libertadores",
+                "brasileirão",
+                "mundial"
+            ]
+        }
+    },
+
+    "not_found": {
+        "user": {
+            "name": "Piquerez Brabo",
+            "email": "Piquerez@sep.com.br",
+            "password": "123456"
+        },
+        "task": {
+            "name": "Cruzamento para o Rony"
+        }
+    }
+}

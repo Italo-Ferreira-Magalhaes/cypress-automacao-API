@@ -1,0 +1,35 @@
+{
+    "login": {
+        "name": "Magalhaes Ferreira",
+        "email": "magalhaes@yahoo.com.br",
+        "password": "654321"
+    },
+
+    "inv_password": {
+        "email": "italo@yahoo.com.br",
+        "password": "123456"
+    },
+
+    "email_404": {
+        "email": "ferreira@yahoo.com.br",
+        "password": "654321"
+    },
+
+    "register_user": {
+        "name": "Italo Ferreira",
+        "email": "italo@yahoo.com.br",
+        "password": "654321"
+    },
+
+    "duplicate_email": {
+        "name": "Tito Magalhães",
+        "email": "magalhaes@yahoo.com.br",
+        "password": "654321"
+    },
+
+    "require_fields": {
+        "name": "Italo Ferreira",
+        "email": "ferreira@yahoo.com.br",
+        "password": "123456"
+    }
+}

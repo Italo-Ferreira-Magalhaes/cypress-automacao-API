@@ -1,0 +1,58 @@
+{
+    "list": {
+        "user": {
+            "name": "Endrick Nove",
+            "email": "endricknove@sep.com.br",
+            "password": "123456"
+        },
+        "tasks": [
+            {
+                "name": "Estud4r Javascript",
+                "tags": [
+                    "qax"
+                ]
+            },
+            {
+                "name": "Estud4r Typescript",
+                "tags": [
+                    "typescript",
+                    "ts"
+                ]
+            },
+            {
+                "name": "Estud4r Cypress",
+                "tags": [
+                    "cypress",
+                    "javascript",
+                    "nodejs"
+                ]
+            }
+        ]
+    },
+    "unique": {
+        "user": {
+            "name": "Jorgito Valdivia",
+            "email": "jorgito@sep.com.br",
+            "password": "123456"
+        },
+        "task": {
+            "name": "Construir a Mark87",
+            "tags": [
+                "ark",
+                "nanotech",
+                "friday"
+            ]
+        }
+    },
+
+    "not_found": {
+        "user": {
+            "name": "Diego Showza",
+            "email": "showza@sep.com.br",
+            "password": "123456"
+        },
+        "task": {
+            "name": "Gol na final"
+        }
+    }
+}
