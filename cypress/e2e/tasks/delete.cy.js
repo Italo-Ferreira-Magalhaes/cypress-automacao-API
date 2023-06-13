@@ -38,7 +38,6 @@ describe('DELETE /tasks/:id', () => {
                             .then(response => {
                                 expect(response.status).to.eq(204)
                             })
-
                         cy.deleteTask(respTask.body._id, respUser.body.token)
                             .then(response => {
                                 expect(response.status).to.eq(404)

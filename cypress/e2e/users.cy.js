@@ -6,26 +6,23 @@ describe('POST /users', () => {
     })
   })
 
-  it('register a new user', function() {
+  it('register a new user', function () {
 
     const user = this.users.register_user
 
     cy.task('removeUser', user.email)
-
     cy.postUser(user)
       .then(response => {
         expect(response.status).to.eq(201)
       })
   })
 
-  it('duplicate email', function() {
+  it('duplicate email', function () {
 
     const user = this.users.duplicate_email
 
     cy.task('removeUser', user.email)
-
     cy.postUser(user)
-
     cy.postUser(user)
       .then(response => {
 
@@ -44,7 +41,6 @@ describe('POST /users', () => {
     })
 
     it('name is required', function () {
-
       delete user.name
 
       cy.postUser(user)
@@ -58,7 +54,6 @@ describe('POST /users', () => {
     })
 
     it('email is required', function () {
-
       delete user.email
 
       cy.postUser(user)
@@ -72,7 +67,6 @@ describe('POST /users', () => {
     })
 
     it('password is required', function () {
-
       delete user.password
 
       cy.postUser(user)

@@ -7,7 +7,6 @@ describe('GET / tasks', () => {
     })
 
     it('get my tasks', function () {
-
         const { user, tasks } = this.tasks.list
 
         cy.task('removeTasksLike', 'Estud4r')
@@ -69,7 +68,6 @@ describe('GET /tasks/:id', () => {
                             .then(response => {
                                 expect(response.status).to.eq(204)
                             })
-
                         cy.getUniqueTask(respTask.body._id, respUser.body.token)
                             .then(response => {
                                 expect(response.status).to.eq(404)

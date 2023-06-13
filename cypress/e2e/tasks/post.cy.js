@@ -48,7 +48,6 @@ describe('POST /tasks', () => {
                     expect(response.body[0].payload).to.include(user.name.split(' ')[0])
                     expect(response.body[0].payload).to.include(task.name)
                     expect(response.body[0].payload).to.include(user.email)
-
                 })
         })
     })
@@ -60,14 +59,11 @@ describe('POST /tasks', () => {
 
         cy.task('removeUser', user.email)
         cy.postUser(user)
-
         cy.postSession(user)
             .then(respUser => {
                 //cy.log(response.body.token)
                 cy.task('removeTask', task.name, user.email)
-
                 cy.postTask(task, respUser.body.token)
-
                 cy.postTask(task, respUser.body.token)
                     .then(response => {
                         expect(response.status).to.eq(409)

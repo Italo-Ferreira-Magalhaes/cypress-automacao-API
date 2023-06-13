@@ -20,7 +20,6 @@ describe('PUT /tasks/:id/done', () => {
                             .then(response => {
                                 expect(response.status).to.eq(204)
                             })
-
                         cy.getUniqueTask(respTask.body._id, respUser.body.token)
                             .then(response => {
                                 expect(response.body.is_done).to.be.true
@@ -43,7 +42,6 @@ describe('PUT /tasks/:id/done', () => {
                             .then(response => {
                                 expect(response.status).to.eq(204)
                             })
-
                         cy.putTaskDone(respTask.body._id, respUser.body.token)
                             .then(response => {
                                 expect(response.status).to.eq(404)
